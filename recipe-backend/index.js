@@ -10,7 +10,8 @@ app.use(express.json());
 app.use(function (req, res, next) {
     const allowedOrigins = [
         'http://localhost:3000',
-        'https://recipe-app-frontend-r00zsq7qr-thilini-maheshikas-projects.vercel.app'
+        'https://recipe-app-frontend-r00zsq7qr-thilini-maheshikas-projects.vercel.app',
+        'https://recipe-app-server-ocveju037-thilini-maheshikas-projects.vercel.app'
     ];
 
     const origin = req.headers.origin;
