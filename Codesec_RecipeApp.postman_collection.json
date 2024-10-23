@@ -1,0 +1,354 @@
+{
+	"info": {
+		"_postman_id": "d86fc43f-e563-43a1-90f5-c0d516ca9164",
+		"name": "Codesec_RecipeApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15473278"
+	},
+	"item": [
+		{
+			"name": "categories",
+			"item": [
+				{
+					"name": "Category All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoaWxpQGdtYWlsLmNvbSIsImlhdCI6MTcyOTY4MzI0NiwiZXhwIjoxNzI5Njg2ODQ2fQ.PAaGicUApfGCb8Y19Trrnbsv3H77dromc66dL7AQmhY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://13.48.45.193:3006/api/categories/all",
+							"protocol": "http",
+							"host": [
+								"13",
+								"48",
+								"45",
+								"193"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"categories",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RecipeBy Category",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoaWxpQGdtYWlsLmNvbSIsImlhdCI6MTcyOTY4MzI0NiwiZXhwIjoxNzI5Njg2ODQ2fQ.PAaGicUApfGCb8Y19Trrnbsv3H77dromc66dL7AQmhY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://13.48.45.193:3006/api/categories/recipe/Beef",
+							"protocol": "http",
+							"host": [
+								"13",
+								"48",
+								"45",
+								"193"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"categories",
+								"recipe",
+								"Beef"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "User Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"thili@gmail.com\",\r\n    \"password\" : \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.48.45.193:3006/api/user/login",
+							"protocol": "http",
+							"host": [
+								"13",
+								"48",
+								"45",
+								"193"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoaWxpQGdtYWlsLmNvbSIsImlhdCI6MTcyOTY4MzI0NiwiZXhwIjoxNzI5Njg2ODQ2fQ.PAaGicUApfGCb8Y19Trrnbsv3H77dromc66dL7AQmhY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://13.48.45.193:3006/api/user/all",
+							"protocol": "http",
+							"host": [
+								"13",
+								"48",
+								"45",
+								"193"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"user",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\": \"Thilini\",\r\n    \"last_name\": \"Maheshika\",\r\n    \"email\": \"thili@gmail.com\",\r\n    \"phone\" : \"0714567831\",\r\n    \"password\" : \"12345\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.48.45.193:3006/api/user/create",
+							"protocol": "http",
+							"host": [
+								"13",
+								"48",
+								"45",
+								"193"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"user",
+								"create"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "recipe",
+			"item": [
+				{
+					"name": "Filter",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoaWxpQGdtYWlsLmNvbSIsImlhdCI6MTcyOTY4MzI0NiwiZXhwIjoxNzI5Njg2ODQ2fQ.PAaGicUApfGCb8Y19Trrnbsv3H77dromc66dL7AQmhY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://13.48.45.193:3006/api/recipe/filter?category=Beef",
+							"protocol": "http",
+							"host": [
+								"13",
+								"48",
+								"45",
+								"193"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"recipe",
+								"filter"
+							],
+							"query": [
+								{
+									"key": "category",
+									"value": "Beef"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RecipeBy Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoaWxpQGdtYWlsLmNvbSIsImlhdCI6MTcyOTY4MzI0NiwiZXhwIjoxNzI5Njg2ODQ2fQ.PAaGicUApfGCb8Y19Trrnbsv3H77dromc66dL7AQmhY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://13.48.45.193:3006/api/recipe/52772",
+							"protocol": "http",
+							"host": [
+								"13",
+								"48",
+								"45",
+								"193"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"recipe",
+								"52772"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "favourites",
+			"item": [
+				{
+					"name": "Add Fav",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoaWxpQGdtYWlsLmNvbSIsImlhdCI6MTcyOTY4MzI0NiwiZXhwIjoxNzI5Njg2ODQ2fQ.PAaGicUApfGCb8Y19Trrnbsv3H77dromc66dL7AQmhY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"idMeal\" : \"52752\",\r\n    \"userid\" : \"67175ae85eaa9157b3e38f91\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://13.48.45.193:3006/api/favourite/add",
+							"protocol": "http",
+							"host": [
+								"13",
+								"48",
+								"45",
+								"193"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"favourite",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FavByUserId",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoaWxpQGdtYWlsLmNvbSIsImlhdCI6MTcyOTY4MzI0NiwiZXhwIjoxNzI5Njg2ODQ2fQ.PAaGicUApfGCb8Y19Trrnbsv3H77dromc66dL7AQmhY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://13.48.45.193:3006/api/favourite/all/67175ae85eaa9157b3e38f91",
+							"protocol": "http",
+							"host": [
+								"13",
+								"48",
+								"45",
+								"193"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"favourite",
+								"all",
+								"67175ae85eaa9157b3e38f91"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remove Fav",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoaWxpQGdtYWlsLmNvbSIsImlhdCI6MTcyOTY4MzI0NiwiZXhwIjoxNzI5Njg2ODQ2fQ.PAaGicUApfGCb8Y19Trrnbsv3H77dromc66dL7AQmhY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://13.48.45.193:3006/api/favourite/remove/6717665f3d916f78c280f37e",
+							"protocol": "http",
+							"host": [
+								"13",
+								"48",
+								"45",
+								"193"
+							],
+							"port": "3006",
+							"path": [
+								"api",
+								"favourite",
+								"remove",
+								"6717665f3d916f78c280f37e"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
