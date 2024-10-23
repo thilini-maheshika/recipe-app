@@ -8,17 +8,18 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 app.use(function (req, res, next) {
-    const allowedOrigins = [
-        'http://localhost:3000',
-        'https://recipe-app-frontend-r00zsq7qr-thilini-maheshikas-projects.vercel.app',
-        'https://recipe-app-server-ocveju037-thilini-maheshikas-projects.vercel.app'
-    ];
+    // const allowedOrigins = [
+    //     'http://localhost:3000',
+    //     'https://recipe-app-frontend-r00zsq7qr-thilini-maheshikas-projects.vercel.app',
+    //     'https://recipe-app-server-ocveju037-thilini-maheshikas-projects.vercel.app'
+    // ];
 
-    const origin = req.headers.origin;
-    if (allowedOrigins.includes(origin)) {
-        res.header('Access-Control-Allow-Origin', origin);
-    }
+    // const origin = req.headers.origin;
+    // if (allowedOrigins.includes(origin)) {
+    //     res.header('Access-Control-Allow-Origin', origin);
+    // }
 
+    res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
     res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, x-token');
 
