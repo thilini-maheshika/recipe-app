@@ -29,11 +29,6 @@ const Login = () => {
       const response = await axios.post(process.env.REACT_APP_API_ENDPOINT + '/user/login', {
           email: email,
           password: password
-      },{
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        withCredentials: true
       }
       );
 
